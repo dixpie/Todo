@@ -33,5 +33,5 @@ First Step
 <em>
 Second Step
 </em>
-```git clone https://github.com/dixpie/Todo.git```
+``git clone https://github.com/dixpie/Todo.git``
 <hr>
