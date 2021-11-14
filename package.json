@@ -8,7 +8,7 @@
     "build-css": "tailwindcss build src/styles.css -o public/styles.css"
   },
   "keywords": [],
-  "author": "",
+  "author": "Dixpie",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
