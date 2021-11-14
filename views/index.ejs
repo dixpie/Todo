@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html :class="{ 'theme-dark': dark }" x-data="data()" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="/css/tailwind.css">
+    <link rel="stylesheet" href="/css/tailwind.output.css">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+    <script src="/js/init-alpine.js"></script>
+    <script src="/js/charts-lines.js" defer></script>
+    <script src="/js/charts-pie.js" defer></script>
+    <link rel="stylesheet" href="/css/full.css">
+    <link rel="stylesheet" href="/css/styled.css">
+    <link rel="stylesheet" href="/css/themes.css">
+    <link rel="stylesheet" href="/css/tailwind-dark.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            max-width: 90% !important;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="font-size: 100px;text-align: center;">
+        Todo List
+    </h1>
+
+    <form action="/admin/new" method="POST">
+        <div class="form-control mb-4">
+            <label class="label">Name</span>
+            </label>
+            <input placeholder="Name" name="name" class="input input-bordered" type="text">
+        </div>
+        <div class="form-control">
+            <label class="label">
+                <span class="label-text">Title</span>
+            </label>
+            <input placeholder="Title" name="title" class="input input-bordered" type="text">
+        </div>
+        <button class="btn btn-success mt-8" type="submit">click</button>
+    </form>
+    <%- include("./table.ejs") %>
+</body>
+
+<script src="/tailwind.config.js"></script>
+
+</html>

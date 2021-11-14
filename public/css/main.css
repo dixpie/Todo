@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'aviny';
+    src: url('../fonts/aviny/aviny.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/aviny/aviny.html') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/aviny/aviny.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/aviny/aviny.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/aviny/aviny.svg') format('svg');
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'sans';
+    src: url('../fonts/sans/IRANSansWebFaNum.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/sans/IRANSansWebFaNum.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/sans/IRANSansWebFaNum.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/sans/IRANSansWebFaNum.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/sans/IRANSansWebFaNum.svg') format('svg');
+    /* Legacy iOS */
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #293042;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #293042;
+}
+
+* {
+    font-family: aviny;
+    font-size: 1.2rem;
+    /* color: #fff; */
+}
+
+/* .navbar {
+    background-color : !important;
+} */
+
+td {
+    color: black;
+}
+
+/* *{
+    scroll-behavior:auto;
+} */
