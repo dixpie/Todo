@@ -11,9 +11,27 @@ Todo List With Node.js &amp; MongoDB
 How to Work
 </h3>
 <em>
-Language : Javascript; \n
-RunTime : Node.js; \n
+Language : Javascript;
+
+RunTime : Node.js;
+
 View Engine : ejs;
+
 Database : MongoDB;
+
 ODM : mongoose;
 </em>
+
+<h3>
+Use It Now
+</h3>
+<em>
+First Step
+</em>
+```Open Command Prompt```
+<hr>
+<em>
+Second Step
+</em>
+```git clone https://github.com/dixpie/Todo.git```
+<hr>
