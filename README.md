@@ -40,5 +40,17 @@ git clone https://github.com/dixpie/Todo.git
 Second Step
 </em>
 
+```
+Open Run.bat
+```
+
+<hr>
+<em>
+Third Step
+</em>
+  
+```
+Open Localhost:4242 in your Browser
+```
 
 <hr>
