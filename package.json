@@ -5,7 +5,6 @@
   "main": "app.js",
   "scripts": {
     "start": "nodemon .",
-    "build-css": "tailwindcss build src/styles.css -o public/styles.css"
   },
   "keywords": [],
   "author": "Dixpie",
