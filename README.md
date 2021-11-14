@@ -35,7 +35,7 @@ Open Command Prompt
 <em>
 Second Step
 </em>
-``
+```
 git clone https://github.com/dixpie/Todo.git
-``
+```
 <hr>
