@@ -8,7 +8,7 @@ Todo List With Node.js &amp; MongoDB
 شما هم میتونید ازش استفاده کنید
 
 <h3>
-How to Work
+How it Work
 </h3>
 <em>
   <ul>
