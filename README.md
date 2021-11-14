@@ -28,10 +28,14 @@ Use It Now
 <em>
 First Step
 </em>
-```Open Command Prompt```
+```
+Open Command Prompt
+```
 <hr>
 <em>
 Second Step
 </em>
-``git clone https://github.com/dixpie/Todo.git``
+``
+git clone https://github.com/dixpie/Todo.git
+``
 <hr>
