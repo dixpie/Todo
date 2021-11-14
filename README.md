@@ -6,3 +6,14 @@ Todo List With Node.js &amp; MongoDB
 این پروژه رو برای خودم نوشتم که کار های روزمرم رو بهتر مدیریت کنم
 
 شما هم میتونید ازش استفاده کنید
+
+<h3>
+How to Work
+</h3>
+<em>
+Language : Javascript;
+RunTime : Node.js;
+View Engine : ejs;
+Database : MongoDB;
+ODM : mongoose;
+</em>
