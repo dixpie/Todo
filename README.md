@@ -11,15 +11,17 @@ Todo List With Node.js &amp; MongoDB
 How to Work
 </h3>
 <em>
-Language : Javascript;
+  <ul>
+    <li>Language : Javascript;</li>
 
-RunTime : Node.js;
+<li>RunTime : Node.js;</li>
 
-View Engine : ejs;
+<li>View Engine : ejs; </li>
 
-Database : MongoDB;
+<li> Database : MongoDB; </li>
 
-ODM : mongoose;
+<li> ODM : mongoose; </li>
+  
 </em>
 
 <h3>
@@ -28,14 +30,15 @@ Use It Now
 <em>
 First Step
 </em>
+
 ```
-Open Command Prompt
+git clone https://github.com/dixpie/Todo.git
 ```
+
 <hr>
 <em>
 Second Step
 </em>
-```
-git clone https://github.com/dixpie/Todo.git
-```
+
+
 <hr>
