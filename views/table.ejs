@@ -1,116 +1,75 @@
-<!-- This example requires Tailwind CSS v2.0+ -->
-<script src="/js/sweetalert.min.js"></script>
-<script src="/js/deleteRequest.js">
-</script>
+        <!-- Todo list section -->
+        <div class="row mx-1 px-5 pb-3 w-80">
+            <div class="col mx-auto">
 
-<link rel="stylesheet" href="/css/style2.css">
-<!-- <style>
-        h2,
-        p,
-        h5 {
-            color: #333;
-        }
-    </style> -->
-
-<div class="w-full overflow-hidden rounded-lg shadow-xs mt-8">
-    <div class="w-full overflow-x-auto">
-        <table class="w-full whitespace-no-wrap">
-            <thead>
-                <tr
-                    class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
-                    <th class="px-4 py-3">Todo</th>
-                    <th class="px-4 py-3">Title</th>
-                    <th class="px-4 py-3">Status</th>
-                    <th class="px-4 py-3">Date</th>
-                    <th class="px-4 py-3">Actions</th>
-                </tr>
-            </thead>
-            <tbody class="bg-white divide-y divide-gray-700 dark:bg-gray-800">
                 <% if (todo.length> 0) { %>
                     <% todo.forEach(todos=> { %>
 
-                        <tr class="text-gray-700 dark:text-gray-400">
-                            <td class="px-4 py-3">
-                                <div class="flex items-center text-sm">
-                                    <!-- Avatar with inset shadow -->
-                                    <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
+                        <!-- Todo Item 2 -->
+                        <div class="row px-3 align-items-center todo-item rounded">
+                            <div class="col-auto m-1 p-0 d-flex align-items-center">
+                                <h2 class="m-0 p-0">
                                         <% if(todos.completed) { %>
-                                            <i class="fa fa-check" style="color: green;font-size: 35px;"></i>
-                                            <% }else { %>
-                                                <i class="fa fa-clock-o"
-                                                    style="color: rgb(189, 189, 0);font-size: 35px;"></i>
-                                                <% } %>
-                                                    <div class="absolute inset-0 rounded-full shadow-inner"
-                                                        aria-hidden="true">
-                                                    </div>
-                                    </div>
-                                    <div>
-                                        <p class="font-semibold">
-                                            <% if(todos.completed) {%>
-                                                <del>
-                                                    <%= todos.name %>
-                                                </del>
-                                                <% } else { %>
-                                                    <%= todos.name %>
-                                                        <% } %>
-                                        </p>
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="px-4 py-3 text-sm">
-                                <% if(todos.title.length> 0) { %>
-                                    <%= todos.title %>
-                                        <% }else { %>
-                                            Empty
-                                            <% } %>
-                            </td>
-                            <td class="px-4 py-3 text-xs">
-                                <span
-                                    class="px-2 py-1 font-semibold leading-tight rounded-full <% if(todos.completed) { %> bg-green-700 text-green-100 <% }else { %> text-orange-100 bg-yellow-400 <% } %>">
-                                    <% if(todos.completed) { %>
-                                        Finished
-                                        <% }else { %> Do It <% } %>
-                                </span>
-                            </td>
-                            <td class="px-4 py-3 text-sm">
-                                <%= todos.time.toLocaleTimeString() %>
-                            </td>
-                            <td class="px-4 py-3">
-                                <div class="flex items-center space-x-4 text-sm">
-                                    <% if(!todos.completed) {%>
-                                        <button
-                                            class="flex items-center justify-between px-2 py-2 text-sm font-medium leading-5 text-purple-600 rounded-lg dark:text-gray-400 focus:outline-none focus:shadow-outline-gray"
-                                            aria-label="complete">
-                                            <a href="/admin/completed/<%= todos._id %>">
-                                                <i class="fa fa-check" style="font-size: 20px;"></i>
-                                            </a>
-                                        </button>
-                                        <% } %> 
-                                        <button
-                                            class="flex items-center justify-between px-2 py-2 text-sm font-medium leading-5 text-purple-600 rounded-lg dark:text-gray-400 focus:outline-none focus:shadow-outline-gray"
-                                            aria-label="Delete">
-                                            <a href="/admin/delete/<%= todos._id %>">
+                                        <i class="fa fa-check-square-o text-primary btn m-0 p-0" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Mark as todo"></i>
+                                      <% }else { %>
+                                       <i class="fa fa-square-o text-primary btn m-0 p-0" data-toggle="tooltip"
+                                        data-placement="bottom" title="Mark as complete"></i>
 
-                                                <svg class="w-5 h-5" aria-hidden="true" fill="currentColor"
-                                                    viewBox="0 0 20 20">
-                                                    <path fill-rule="evenodd"
-                                                        d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z"
-                                                        clip-rule="evenodd"></path>
-                                                </svg>
-                                            </a>
-                                        </button>
+                                    <i class="fa fa-check-square-o text-primary btn m-0 p-0 d-none"
+                                        data-toggle="tooltip" data-placement="bottom" title="Mark as todo"></i>
+                                        <% } %>
+                                </h2>
+                            </div>
+                            <div class="col px-1 m-1 d-flex align-items-center">
+                                <input type="text"
+                                    class="form-control form-control-lg border-0 edit-todo-input bg-transparent rounded px-3"
+                                    readonly value="<%= todos.name %>" title="<%= todos.name %>" />
+                                <input type="text"
+                                    class="form-control form-control-lg border-0 edit-todo-input rounded px-3 d-none"
+                                    value="Renew car insurance" />
+                            </div>
+                            <div class="col-auto m-1 p-0 px-3">
+                                <div class="row">
+                                    <div
+                                        class="col-auto d-flex align-items-center rounded bg-white border border-warning">
+                                        <i class="fa fa-hourglass-2 my-2 px-2 text-warning btn" data-toggle="tooltip"
+                                            data-placement="bottom" title="" data-original-title="Due on date"></i>
+                                        <h6 class="text my-2 pr-2"><%= todos.until %></h6>
+                                    </div>
                                 </div>
-                            </td>
-                        </tr>
-                        <%}) %>
-                            <%} %>
-            </tbody>
-        </table>
+                            </div>
+                            <div class="col-auto m-1 p-0 todo-actions">
+                                <div class="row d-flex align-items-center justify-content-end">
+                               <a href="/admin/completed/<%= todos._id %>">
+                                    <h5 class="m-0 p-0 px-2">
+                                        <i class="fa fa-check text-success btn m-0 p-0" data-toggle="tooltip"
+                                            data-placement="bottom" title="Edit todo"></i>
+                                    </h5>     
+                                     </a>
+                                       <h5 class="m-0 p-0 px-2">
+                                        <i class="fa fa-pencil text-info btn m-0 p-0" data-toggle="tooltip"
+                                            data-placement="bottom" title="Edit todo"></i>
+                                    </h5>
+                                    <h5 class="m-0 p-0 px-2">
+                                   <a href="/admin/delete/<%= todos._id %>">
+                                        <i class="fa fa-trash-o text-danger btn m-0 p-0" data-toggle="tooltip"
+                                            data-placement="bottom" title="Delete todo"></i>
+                                             </a>
+                                    </h5>
+                                </div>
+                                <div class="row todo-created-info">
+                                    <div class="col-auto d-flex align-items-center pr-2">
+                                        <i class="fa fa-info-circle my-2 px-2 text-black-50 btn" data-toggle="tooltip"
+                                            data-placement="bottom" title="" data-original-title="Created date"></i>
+                                        <label class="date-label my-2 text-black-50"><%= todos.time.toLocaleTimeString() %></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <% }) %>
+                            <% } %>
+            </div>
+        </div>
     </div>
-</div>
-</div>
-<script>
-    setInterval(() => {
-        location.reload()
-    }, 200000)
-</script>
+
+

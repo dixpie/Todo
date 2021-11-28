@@ -1,23 +1,41 @@
-  function getThemeFromLocalStorage() {
-      // if user already changed the theme, use it
-      if (window.localStorage.getItem('dark')) {
-          return JSON.parse(window.localStorage.getItem('dark'))
-      }
 
-      // else return their preferences
-      return (
-          !!window.matchMedia &&
-          window.matchMedia('(prefers-color-scheme: dark)').matches
-      )
-  }
+window.onload = function () {
+    bootlint.showLintReportForCurrentDocument([], {
+        hasProblems: false,
+        problemFree: false
+    });
 
-  function setThemeToLocalStorage(value) {
-      window.localStorage.setItem('dark', value)
-  }
+    $('[data-toggle="tooltip"]').tooltip();
 
+    function formatDate(date) {
+        return (
+            date.getDate() +
+            "/" +
+            (date.getMonth() + 1) +
+            "/" +
+            date.getFullYear()
+        );
+    }
 
- var dark = getThemeFromLocalStorage()
-     function toggleTheme() {
-          this.dark = !this.dark
-          setThemeToLocalStorage(this.dark)
-      }
+    var currentDate = formatDate(new Date());
+
+    $(".due-date-button").datepicker({
+        format: "dd/mm/yyyy",
+        autoclose: true,
+        todayHighlight: true,
+        startDate: currentDate,
+        orientation: "bottom right"
+    });
+
+    $(".due-date-button").on("click", function (event) {
+        $(".due-date-button")
+            .datepicker("show")
+            .on("changeDate", function (dateChangeEvent) {
+                $(".date").val("kos")
+              
+                $(".due-date-button").datepicker("hide");
+                $(".due-date-label").text(formatDate(dateChangeEvent.date));
+                
+            });
+    });
+};

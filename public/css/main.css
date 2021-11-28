@@ -1,55 +1,37 @@
-@font-face {
-    font-family: 'aviny';
-    src: url('../fonts/aviny/aviny.eot');
-    /* IE9 Compat Modes */
-    src: url('../fonts/aviny/aviny.html') format('woff2'), /* Super Modern Browsers */
-    url('../fonts/aviny/aviny.woff') format('woff'), /* Pretty Modern Browsers */
-    url('../fonts/aviny/aviny.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('../fonts/aviny/aviny.svg') format('svg');
-    /* Legacy iOS */
+body {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.6;
+    background-color: #333;
 }
 
-@font-face {
-    font-family: 'sans';
-    src: url('../fonts/sans/IRANSansWebFaNum.eot');
-    /* IE9 Compat Modes */
-    src: url('../fonts/sans/IRANSansWebFaNum.woff2') format('woff2'), /* Super Modern Browsers */
-    url('../fonts/sans/IRANSansWebFaNum.woff') format('woff'), /* Pretty Modern Browsers */
-    url('../fonts/sans/IRANSansWebFaNum.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('../fonts/sans/IRANSansWebFaNum.svg') format('svg');
-    /* Legacy iOS */
+.add-todo-input,
+.edit-todo-input {
+    outline: none;
 }
 
-::-webkit-scrollbar {
-    width: 8px;
+.add-todo-input:focus,
+.edit-todo-input:focus {
+    border: none !important;
+    box-shadow: none !important;
 }
 
-::-webkit-scrollbar-track {
-    background: #293042;
+.view-opt-label,
+.date-label {
+    font-size: 0.8rem;
 }
 
-::-webkit-scrollbar-thumb {
-    background: #fff;
+.edit-todo-input {
+    font-size: 1.7rem !important;
 }
 
-::-webkit-scrollbar-thumb:hover {
-    background: #293042;
+.todo-actions {
+    visibility: hidden !important;
 }
 
-* {
-    font-family: aviny;
-    font-size: 1.2rem;
-    /* color: #fff; */
+.todo-item:hover .todo-actions {
+    visibility: visible !important;
 }
 
-/* .navbar {
-    background-color : !important;
-} */
-
-td {
-    color: black;
+.todo-item.editing .todo-actions .edit-icon {
+    display: none !important;
 }
-
-/* *{
-    scroll-behavior:auto;
-} */
