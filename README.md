@@ -1,7 +1,7 @@
-![NEMESIS](https://github.com/zNiGhTFuRyZNTT/Discord-Avatar-Autochange/raw/main/NEMESIS_TEAM_LOGO.jpg)
+<img style="text-align=center" src="https://github.com/zNiGhTFuRyZNTT/Discord-Avatar-Autochange/raw/main/NEMESIS_TEAM_LOGO.jpg" />
 # Todo
 Todo List With Node.js &amp; MongoDB
-![Screenshot 2021-11-28 153505](https://user-images.githubusercontent.com/77354554/143766944-8d78e8eb-2313-4c47-a6ae-4bdfbcad564b.png)
+  <img src="https://user-images.githubusercontent.com/77354554/143766944-8d78e8eb-2313-4c47-a6ae-4bdfbcad564b.png"/>
 <hr>
 نوشتن این بات تقریبا وقت زیادی نگرفت (قبول دارم زیاد فرانت خوبی نداره و تو آینده شاید بهترش کردم)
 این پروژه رو برای خودم نوشتم که کار های روزمرم رو بهتر مدیریت کنم
